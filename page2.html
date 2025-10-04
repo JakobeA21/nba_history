@@ -4,81 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA Legends and Modern Basketball - Basketball History</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Link to custom stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header id="main-header">
-        <h1>NBA Legends and Modern Basketball</h1>
-        <p>The NBA has produced some of the greatest athletes in sports history. From Bill Russell's championship dominance to Michael Jordan's global impact, these legendary players have shaped basketball into the cultural phenomenon it is today.</p>
-    </header>
-
-    <!-- Main content focusing on basketball legends and modern era -->
-    <main>
-        <!-- Article about basketball's greatest players -->
-        <article id="legends-article">
-            <h2>The Greatest Basketball Players of All Time</h2>
-            <p class="highlight">Basketball has been blessed with extraordinary talent throughout its history. These players didn't just excel on the court - they transformed the game, influenced culture, and inspired millions of fans worldwide.</p>
-            
-            <!-- Also need an image here -->
-            
-            <!-- Flexbox container for legends and skills -->
-            <div id="skills-legends-container">
-                <!-- Section with legendary players -->
-                <section id="all-time-legends">
-                    <h3 class="section-header">All-Time Basketball Legends</h3>
-                    <ul>
-                        <li>Michael Jordan - 6 NBA championships, global basketball ambassador</li>
-                        <li>LeBron James - 4 NBA championships, all-time scoring leader</li>
-                        <li>Kareem Abdul-Jabbar - 6 NBA championships, skyhook master</li>
-                        <li>Magic Johnson - 5 NBA championships, revolutionary point guard</li>
-                        <li>Larry Bird - 3 NBA championships, clutch shooting legend</li>
-                        <li>Bill Russell - 11 NBA championships, ultimate winner</li>
-                    </ul>
-                </section>
-
-                <!-- Section with steps to improve basketball skills -->
-                <section id="skill-development">
-                    <h3 class="section-header">How to Develop Elite Basketball Skills</h3>
-                    <ol>
-                        <li>Master basic dribbling with both hands daily</li>
-                        <li>Practice shooting from different spots on the court</li>
-                        <li>Develop court vision through passing drills</li>
-                        <li>Build stamina with conditioning and sprint work</li>
-                        <li>Study game film to understand strategy and positioning</li>
-                        <li>Play against stronger competition to improve</li>
-                        <li>Work with coaches to refine technique</li>
-                    </ol>
-                </section>
+    <!-- Bootstrap container wraps all content -->
+    <div class="container-fluid px-0">
+        <!-- Header section with custom styling -->
+        <header id="main-header" class="text-center py-5 mb-4">
+            <div class="container">
+                <h1 class="display-3 fw-bold">NBA Legends and Modern Basketball</h1>
+                <p class="lead mt-3">The NBA has produced some of the greatest athletes in sports history. From Bill Russell's championship dominance to Michael Jordan's global impact, these legendary players have shaped basketball into the cultural phenomenon it is today.</p>
             </div>
-        </article>
+        </header>
 
-        <!-- Additional section about modern NBA -->
-        <section class="info-box">
-            <h2>The Modern NBA Era</h2>
-            <p>Today's NBA features incredible athleticism, advanced analytics, and global superstars. The three-point revolution has changed how teams play, with players like Stephen Curry transforming basketball strategy.</p>
-            <p>Modern players are more versatile than ever, with big men shooting three-pointers and guards defending multiple positions. The league's international growth has brought talents from around the world, making the NBA truly global.</p>
-        </section>
+        <!-- Main content section -->
+        <main class="container my-5">
+            <!-- Article about basketball's greatest players -->
+            <article id="legends-article" class="mb-5 p-4 rounded shadow">
+                <h2 class="mb-4">The Greatest Basketball Players of All Time</h2>
+                <div class="alert alert-warning" role="alert">
+                    <strong>Basketball Excellence:</strong> Basketball has been blessed with extraordinary talent throughout its history. These players didn't just excel on the court - they transformed the game, influenced culture, and inspired millions of fans worldwide.
+                </div>
+                
+                <!-- Image with Bootstrap styling -->
+                <div class="text-center my-4">
+                    <img 
+                        src="./images/basketball-legends.jpg" 
+                        alt="Artistic collage featuring silhouettes of iconic basketball players including Michael Jordan, LeBron James, and other NBA legends performing signature moves like dunking and shooting during professional games"
+                        class="img-fluid rounded shadow"
+                    />
+                </div>
 
-        <!-- Section about basketball positions -->
-        <section class="info-box">
-            <h2>Basketball Positions and Roles</h2>
-            <p>Basketball teams traditionally feature five positions, each with specific responsibilities. However, modern basketball has evolved toward "positionless" play, where players must be versatile and adaptable to different roles during games.</p>
-            <p>Understanding these positions helps fans appreciate the strategic complexity of basketball and how great players master multiple skills to impact winning.</p>
-        </section>
+                <!-- Bootstrap grid for legends and skills -->
+                <div class="row g-4 my-4">
+                    <!-- All-time legends section -->
+                    <section class="col-lg-6">
+                        <div class="card h-100 border-danger">
+                            <div class="card-header bg-danger text-white">
+                                <h3 class="h5 mb-0">All-Time Basketball Legends</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Michael Jordan</strong> - 6 NBA championships, global basketball ambassador</li>
+                                    <li class="list-group-item"><strong>LeBron James</strong> - 4 NBA championships, all-time scoring leader</li>
+                                    <li class="list-group-item"><strong>Kareem Abdul-Jabbar</strong> - 6 NBA championships, skyhook master</li>
+                                    <li class="list-group-item"><strong>Magic Johnson</strong> - 5 NBA championships, revolutionary point guard</li>
+                                    <li class="list-group-item"><strong>Larry Bird</strong> - 3 NBA championships, clutch shooting legend</li>
+                                    <li class="list-group-item"><strong>Bill Russell</strong> - 11 NBA championships, ultimate winner</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
 
-        <!-- Section about basketball culture -->
-        <section class="info-box">
-            <h2>Basketball's Cultural Impact</h2>
-            <p>Beyond the court, basketball has influenced fashion, music, and social movements. Players have used their platforms to drive social change, while basketball style has become part of mainstream culture worldwide.</p>
-        </section>
-    </main>
+                    <!-- Skill development section -->
+                    <section class="col-lg-6">
+                        <div class="card h-100 border-success">
+                            <div class="card-header bg-success text-white">
+                                <h3 class="h5 mb-0">How to Develop Elite Basketball Skills</h3>
+                            </div>
+                            <div class="card-body">
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item">Master basic dribbling with both hands daily</li>
+                                    <li class="list-group-item">Practice shooting from different spots on the court</li>
+                                    <li class="list-group-item">Develop court vision through passing drills</li>
+                                    <li class="list-group-item">Build stamina with conditioning and sprint work</li>
+                                    <li class="list-group-item">Study game film to understand strategy and positioning</li>
+                                    <li class="list-group-item">Play against stronger competition to improve</li>
+                                    <li class="list-group-item">Work with coaches to refine technique</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
 
-    <!-- Footer with navigation back to main page -->
-    <footer>
-        <div id="footer-nav">
-            <h4>Continue Your Basketball Journey</h4>
-            <a href="index.html" class="button-link">Return to Basketball History Home</a>
-        </div>
-    </footer>
+            <!-- Modern NBA section -->
+            <section class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">The Modern NBA Era</h2>
+                    <p class="card-text">Today's NBA features incredible athleticism, advanced analytics, and global superstars. The three-point revolution has changed how teams play, with players like Stephen Curry transforming basketball strategy.</p>
+                    <p class="card-text">Modern players are more versatile than ever, with big men shooting three-pointers and guards defending multiple positions. The league's international growth has brought talents from around the world, making the NBA truly global.</p>
+                </div>
+            </section>
+
+            <!-- Positions section -->
+            <section class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Basketball Positions and Roles</h2>
+                    <p class="card-text">Basketball teams traditionally feature five positions, each with specific responsibilities. However, modern basketball has evolved toward "positionless" play, where players must be versatile and adaptable to different roles during games.</p>
+                    <p class="card-text">Understanding these positions helps fans appreciate the strategic complexity of basketball and how great players master multiple skills to impact winning.</p>
+                </div>
+            </section>
+
+            <!-- Cultural impact section -->
+            <section class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Basketball's Cultural Impact</h2>
+                    <p class="card-text">Beyond the court, basketball has influenced fashion, music, and social movements. Players have used their platforms to drive social change, while basketball style has become part of mainstream culture worldwide.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer with navigation -->
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="text-center">
+                    <h4 class="mb-3">Continue Your Basketball Journey</h4>
+                    <a href="index.html" class="btn btn-success btn-lg">
+                        Return to Basketball History Home
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
